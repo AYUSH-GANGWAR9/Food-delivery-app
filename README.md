@@ -1,4 +1,4 @@
-<div display = "flex" flex-direction = "column"> <p>**Food Delivery Web Application**</p>       <p>{React, Node.js, Docker, Stripe}</p></div>
+<div display = "flex" flex-direction = "row"> <p>**Food Delivery Web Application**</p>       <p>{React, Node.js, Docker, Stripe}</p></div>
 • Developed a full-stack web application for 500+ users, supporting real-time tracking and secure online
 payments
 • Integrated Stripe payment gateway for secure processing of over 200 transactions per month
