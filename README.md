@@ -1,4 +1,4 @@
-<p align= "center">**Food Delivery Web Application**</p>                                                                                                             {React, Node.js, Docker, Stripe}
+<p align= "center">**Food Delivery Web Application**</p>       {React, Node.js, Docker, Stripe}
 • Developed a full-stack web application for 500+ users, supporting real-time tracking and secure online
 payments
 • Integrated Stripe payment gateway for secure processing of over 200 transactions per month
