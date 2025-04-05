@@ -2,8 +2,6 @@
 
 A comprehensive food delivery platform with customer and admin interfaces. This full-stack application allows customers to browse menus, place orders, and track deliveries, while providing administrators with tools to manage menu items, process orders, and handle user accounts.
 
-![Food Delivery App](https://via.placeholder.com/800x400?text=Food+Delivery+App)
-
 ## Features
 
 ### Customer Features
