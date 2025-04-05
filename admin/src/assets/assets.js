@@ -89,7 +89,19 @@ export const assets ={
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    dashboard_icon: profile_icon,
+    home_icon: profile_icon,
+    list_icon: bag_icon,
+    settings_icon: add_icon,
+    food_1,
+    food_2,
+    food_3,
+    food_4,
+    food_5,
+    food_6,
+    food_7,
+    food_8
 }
 
 

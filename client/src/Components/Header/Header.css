@@ -4,7 +4,14 @@
     background: url('/header_img.png') no-repeat;
     background-size: contain;
     position: relative;
+    transition: all 0.3s ease;
 }
+
+[data-theme='dark'] .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+
 .header-contents{
     position: absolute;
     display: flex;
@@ -16,15 +23,28 @@
     left: 6vw;
     animation: fadeIn 3s;
 }
+
 .header-contents h2{
     font-weight: 500;
     color: white;
     font-size: max(4.5vw, 20px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+[data-theme='dark'] .header-contents h2 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 .header-contents p{
     color: white;
     font-size: 1vw;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+[data-theme='dark'] .header-contents p {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
 .header-contents button{
     border: none;
     color: #747474;
@@ -33,9 +53,22 @@
     background-color: white;
     font-size: max(1vw , 13px);
     border-radius: 50px;
+    transition: all 0.3s ease;
 }
+
+[data-theme='dark'] .header-contents button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 .header-contents button:hover{
     background-color: #424241;
+    color: white;
+}
+
+[data-theme='dark'] .header-contents button:hover {
+    background-color: #333;
+    color: #f0f0f0;
 }
 
 @media (max-width:1050px){

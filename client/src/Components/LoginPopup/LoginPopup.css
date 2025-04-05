@@ -1,6 +1,6 @@
 .login-popup{
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     width: 100%;
     height: 100%;
     background-color: #00000090;
@@ -49,6 +49,16 @@
     font-size: 15px;
     cursor: pointer;
 }
+
+.login-popup-container button:hover {
+    background-color: #e13b3b;
+}
+
+.login-popup-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
 .login-popup-condition{
     display: flex;
     align-items: start;

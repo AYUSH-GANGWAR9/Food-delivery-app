@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Food-delivery-app
 
 Food Delivery Web Application React, Node.js, Docker, Stripe
@@ -11,13 +10,40 @@ success rate
 • Utilized Docker for containerization, reducing deployment complexity and improving application scal-
 ability
 • Optimized MongoDB Atlas database queries, improving data retrieval performance by 35% through indexing and query optimization strategies.
-=======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup Instructions
 
-Currently, two official plugins are available:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the client directory:
+   ```bash
+   cd client
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> bf3cb8c (food-del client side code base)
+## Usage Guidelines
+
+- Access the application at `http://localhost:3000`.
+- Follow the on-screen instructions to explore the features.
+
+## Contribution Instructions
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push to your fork and submit a pull request.

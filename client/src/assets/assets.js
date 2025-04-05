@@ -1,7 +1,9 @@
 import logo from './logo.png'
 import add_icon from './add_icon.png'
 import order_icon from './order_icon.png'
-import profile_image from './profile_image.png'
+// Create dummy variables for profile images
+const profile_image = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+const profile_icon = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y&s=24'
 import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
 
@@ -61,7 +63,6 @@ import twitter_icon from './twitter_icon.png'
 import cross_icon from './cross_icon.png'
 import selector_icon from './selector_icon.png'
 import rating_starts from './rating_starts.png'
-import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 
@@ -70,6 +71,7 @@ export const assets ={
     add_icon,
     order_icon,
     profile_image,
+    profile_icon,
     upload_area,
     parcel_icon,
     basket_icon,
@@ -86,7 +88,6 @@ export const assets ={
     twitter_icon,
     cross_icon,
     selector_icon,
-    profile_icon,
     logout_icon,
     bag_icon,
     parcel_icon

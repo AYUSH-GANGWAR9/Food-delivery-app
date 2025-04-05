@@ -9,6 +9,7 @@ const StoreContextProvider = (props) =>{
     const url = "http://localhost:4000"
     const [token, setToken] = useState(localStorage.getItem("token") || "");
     const [food_list, setFoodList] = useState([]);
+    const [currentUser, setCurrentUser] = useState(null);
 
     const addToCart = async (itemId)=>{
         if(!cartItems[itemId]){
@@ -48,19 +49,31 @@ const StoreContextProvider = (props) =>{
         setCartItems(response.data.cartItems);
     }
 
+    const loadUserData = async (token) => {
+        try {
+            const response = await axios.get(url + "/api/user/profile", {headers: {token}});
+            if (response.data.success) {
+                setCurrentUser(response.data.user);
+            }
+        } catch (error) {
+            console.error("Error loading user data:", error);
+        }
+    }
+
     useEffect(()=>{
         async function loadData() {
             await fetchFoodList();
             if (localStorage.getItem("token")) {
                 setToken(localStorage.getItem("token"))
                 await loadCartData(localStorage.getItem("token"))
+                await loadUserData(localStorage.getItem("token"))
             }
         }
         loadData();
     },[])
 
     const contextValue = {
-        url, food_list, setCartItems, cartItems, removeCartItem, addToCart, getTotalCartAmount, token, setToken
+        url, food_list, setCartItems, cartItems, removeCartItem, addToCart, getTotalCartAmount, token, setToken, currentUser, setCurrentUser
     }
 
     return (
